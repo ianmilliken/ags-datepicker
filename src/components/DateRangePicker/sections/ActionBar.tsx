@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from 'react'
+import { useMemo, useCallback } from 'react'
 import C from '../DatePicker.styles'
 import { useDatePicker } from '../context'
 import S from './ActionBar.styles'

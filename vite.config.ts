@@ -3,6 +3,9 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import tsConfigPaths from 'vite-tsconfig-paths'
+import fg from 'fast-glob'
+
+const storyFiles = fg.sync('src/**/*.stories.tsx')
 
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
@@ -15,10 +18,17 @@ export default defineConfig((configEnv) => ({
     ],
     build: {
         lib: {
-            entry: resolve('src', 'components/index.ts'),
-            name: 'AGS DatePicker',
+            entry: resolve(__dirname, 'src/components/index.ts'),
+            name: 'AGSDatePicker',
             formats: ['es', 'umd'],
             fileName: (format) => `ags-datepicker.${format}.js`,
         },
     },
+    rollupOptions: {
+        external: ['react', 'react-dom', ...storyFiles],
+        globals: {
+            react: 'React',
+            'react-dom': 'ReactDOM',
+        }
+    }
 }))

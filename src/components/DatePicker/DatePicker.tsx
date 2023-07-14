@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
 import { add } from 'date-fns'
 import S from './DatePicker.styles'
 import type { DatePickerComponent, WrappedDatePickerComponent } from './types'

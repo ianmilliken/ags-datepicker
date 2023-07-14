@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import { differenceInMonths, eachMonthOfInterval, endOfYear, format, startOfYear } from 'date-fns'
 import S from '../DatePicker.styles'
 import { useDatePicker } from '../context'

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import { Icon } from '@iconify/react'
 import { add, sub } from 'date-fns'
 import S from '../DatePicker.styles'

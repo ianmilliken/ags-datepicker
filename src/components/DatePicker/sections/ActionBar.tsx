@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import C from '../DatePicker.styles'
 import { useDatePicker } from '../context'
 import S from './ActionBar.styles'

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useMemo, ReactNode } from 'react'
+import { createContext, useContext, useReducer, useMemo, ReactNode } from 'react'
 import type { DateView, DayNameVariant, NullableDate } from './types'
 
 type Action =
