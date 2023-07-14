@@ -1,13 +1,14 @@
 {
-  "name": "@alchemygs/datepicker",
-  "private": false,
-  "version": "0.1.0",
+  "name": "@ianmilliken/datepicker",
+  "version": "0.1.5",
   "type": "module",
   "author": "ianmilliken",
-  "main": "./dist/index.js",
-  "publishConfig": {
-    "regostry": "https://npm.pkg.github.com/"
-  },
+  "main": "./dist/ags-datepicker.umd.js",
+  "module": "./dist/ags-datepicker.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -22,8 +23,6 @@
   "dependencies": {
     "@iconify/react": "^4.1.1",
     "date-fns": "^2.30.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "styled-components": "^6.0.4"
   },
   "devDependencies": {
@@ -56,5 +55,9 @@
     "vite-plugin-dts": "^3.2.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "^4.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
