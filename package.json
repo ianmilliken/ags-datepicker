@@ -1,10 +1,13 @@
 {
-  "name": "ags-datepicker",
+  "name": "@alchemygs/datepicker",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "author": "ianmilliken",
   "main": "./dist/index.js",
+  "publishConfig": {
+    "regostry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
