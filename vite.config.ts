@@ -23,12 +23,17 @@ export default defineConfig((configEnv) => ({
             formats: ['es', 'umd'],
             fileName: (format) => `ags-datepicker.${format}.js`,
         },
-    },
-    rollupOptions: {
-        external: ['react', 'react-dom', ...storyFiles],
-        globals: {
-            react: 'React',
-            'react-dom': 'ReactDOM',
+        rollupOptions: {
+            external: ['react', 'react-dom', 'styled-components', 'date-fns', '@iconify/react', ...storyFiles],
+            output: {
+                globals: {
+                    react: 'React',
+                    'react-dom': 'ReactDOM',
+                    'styled-components': 'styled',
+                    'date-fns': 'dateFns',
+                    '@iconify/react': 'Icon',
+                }
+            }
         }
-    }
+    },
 }))

@@ -1,7 +1,6 @@
 {
   "name": "@ianmilliken/datepicker",
-  "version": "0.1.5",
-  "type": "module",
+  "version": "0.1.7",
   "author": "ianmilliken",
   "main": "./dist/ags-datepicker.umd.js",
   "module": "./dist/ags-datepicker.es.js",
@@ -23,7 +22,9 @@
   "dependencies": {
     "@iconify/react": "^4.1.1",
     "date-fns": "^2.30.0",
-    "styled-components": "^6.0.4"
+    "styled-components": "^6.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.27",
@@ -58,6 +59,9 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@iconify/react": "^4.1.1",
+    "date-fns": "^2.30.0",
+    "styled-components": "^6.0.4"
   }
 }
