@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { spacing } from './utils'
 
-const NakedButton = styled.button.attrs({ type: 'button' })`
+const NakedButton = styled.button`
   font-size: 16px;
   background-color: transparent;
   border: none;
@@ -151,7 +151,7 @@ const Date = styled.div`
   }
 `
 
-const DateButton = styled(NakedButton)<DateProps>`
+const DateButton = styled(NakedButton).attrs({ type: 'button' })<DateProps>`
   width: calc(100% - ${spacing(0.5)});
   height: calc(100% - ${spacing(0.5)});
   color: black;
@@ -226,7 +226,7 @@ const Year = styled.div`
   padding: ${spacing(2)};
 `
 
-const ViewButton = styled(NakedButton)`
+const ViewButton = styled(NakedButton).attrs({ type: 'button' })`
   border-radius: 4px;
 
   &:hover {
@@ -235,7 +235,7 @@ const ViewButton = styled(NakedButton)`
   }
 `
 
-const IconButton = styled(NakedButton)`
+const IconButton = styled(NakedButton).attrs({ type: 'button' })`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@ const IconButton = styled(NakedButton)`
   }
 `
 
-const Button = styled(NakedButton)`
+const Button = styled(NakedButton).attrs({ type: 'button' })`
   padding: ${spacing(1)};
   border: 1px solid #DAE4EB;
   border-radius: ${spacing(1)};
