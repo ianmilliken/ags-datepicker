@@ -20,7 +20,7 @@ export default defineConfig((configEnv) => ({
         lib: {
             entry: resolve(__dirname, 'src/components/index.ts'),
             name: 'AGSDatePicker',
-            formats: ['es', 'umd'],
+            formats: ['es', 'umd', 'cjs'],
             fileName: (format) => `ags-datepicker.${format}.js`,
         },
         rollupOptions: {
